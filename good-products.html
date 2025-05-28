@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>G.shop｜好物專區</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff7d5;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .product-card .info {
+      padding: 1rem;
+    }
+
+    .product-card .info h3 {
+      margin: 0 0 0.5rem;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 3rem;
+    }
+
+    /* LINE 按鈕 */
+    .line-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00c300;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      text-align: center;
+      line-height: 60px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .line-button:hover {
+      background-color: #009a00;
+    }
+
+    @media (max-width: 600px) {
+      .product-card img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">G.shop</div>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="good-products.html">好物專區</a>
+      <a href="#">活動商品</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>✨ 精選好物 ✨</h1>
+    <div class="product-grid">
+      <!-- 商品1 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300?text=商品1" alt="商品1">
+        <div class="info">
+          <h3>復古牛仔外套</h3>
+          <p>經典設計，限量一件</p>
+        </div>
+      </div>
+      <!-- 商品2 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300?text=商品2" alt="商品2">
+        <div class="info">
+          <h3>質感針織毛衣</h3>
+          <p>溫暖又時尚</p>
+        </div>
+      </div>
+      <!-- 商品3 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300?text=商品3" alt="商品3">
+        <div class="info">
+          <h3>休閒百搭T恤</h3>
+          <p>簡單就是美</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 G.shop｜限量單品每週上新 ✨</p>
+    <p>聯絡我們：gshop@email.com</p>
+  </footer>
+
+  <!-- LINE 按鈕 -->
+  <a href="https://line.me/R/ti/p/你的LINE官方帳號ID" class="line-button" title="聯絡我們">💬</a>
+
+</body>
+</html>
