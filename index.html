@@ -1,27 +1,94 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>G.shop｜限量服飾</title>
   <style>
-    body { font-family: sans-serif; padding: 2rem; background: #fdfdfd; }
-    .product { border: 1px solid #ccc; padding: 1rem; margin-bottom: 1.5rem; background: #fff; border-radius: 10px; }
-    .product img { width: 100%; max-width: 400px; border-radius: 10px; }
-    .buy-btn { display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background: #06c755; color: #fff; border-radius: 6px; text-decoration: none; }
+    body {
+      margin: 0;
+      font-family: 'Helvetica', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    /* Header 區 */
+    header {
+      background-color: #fff7d5; /* 淡黃色 */
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* 主內容區 */
+    main {
+      padding: 2rem;
+      background-color: #ffffff; /* 白色底 */
+      min-height: 500px; /* 讓它有一點高度感 */
+    }
+
+    /* Footer 區 */
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        margin-top: 1rem;
+        width: 100%;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0.5rem 0.8rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>🌸 G.shop 新品上架</h1>
 
-  <div class="product">
-    <h2>奶茶色荷葉裙（僅此一件）</h2>
-    <img src="https://via.placeholder.com/400x400?text=商品圖片" alt="奶茶色荷葉裙">
-    <p>柔和奶茶色，優雅荷葉邊<br>尺寸：Free ｜ 價格：NT$690</p>
-    <a class="buy-btn" href="https://line.me/R/ti/p/你的LINE官方帳號ID" target="_blank">我要購買（LINE私訊）</a>
-  </div>
+  <!-- Header -->
+  <header>
+    <div class="logo">G.shop</div>
+    <nav>
+      <a href="#">首頁</a>
+      <a href="#">好物專區</a>
+      <a href="#">活動商品</a>
+    </nav>
+  </header>
 
-  <!-- 可以繼續加更多商品 -->
+  <!-- 主內容區 -->
+  <main>
+    <h1>歡迎來到 G.shop</h1>
+    <p>這裡將會展示我們的限量服飾商品，請點上方分類查看。</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 G.shop｜本網站由店主手工打造 ✨</p>
+    <p>聯絡我們：gshop@email.com ｜ LINE 官方帳號：@gshop</p>
+  </footer>
 
 </body>
 </html>
